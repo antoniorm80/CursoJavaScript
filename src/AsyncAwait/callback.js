@@ -1,5 +1,5 @@
-// Llamadas asíncronas.  CallBack Hell
-function reuestHandler(req, res) {
+// Llamada Asíncronas - con CallBacks Hell (Pirámida de la muerte)
+function requestHandler(req, res) {
     User.findById(req.userId, function(err, user) {
         if(err) {
             res.send(err);
@@ -21,5 +21,6 @@ function reuestHandler(req, res) {
         }
     })
     // Whatever Code
+
 
 }
